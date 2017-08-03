@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PWA</title>
+	</head>
+	<body>
+		<img src="images/glass.jpg" width="200"><br>
+		Progressive web app
+		<script>
+			if('serviceWorker' in navigator) {
+			  navigator.serviceWorker
+			           .register('sw.js')
+			           .then(function() { console.log("Service Worker Registered"); });
+			}
+		</script>
+	</body>
+</html>
